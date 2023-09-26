@@ -105,8 +105,9 @@ class test:
 print('----------------------------------------')
 
 
-def concat(a: str, b, c='', d='', e=''):
-    print(f'{a} {b} {c} {d} {e}'.strip())
+def concat(a: str, b, c='', d='', e=''): # default str arguments for the last 3 parameters
+    # without default argument you must indicate parameters
+    print(f'{a} {b} {c} {d} {e}'.strip()) # void type, no return type, if you dont want spaces, put .strip
 
 
 concat('Cydeo', 'School')
