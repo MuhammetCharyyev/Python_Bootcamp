@@ -44,6 +44,7 @@ print(square(10))
 # print( divide('C#', 'Python'))
 
 def add(num1: numbers, num2: numbers) -> numbers:
+    # if you're not sure what is the data type for digits (int or float), then point 'numbers'
     return num1 + num2
 
 
@@ -55,6 +56,11 @@ print('------------------------------------------')
 
 
 def calculate(num1: numbers, num2: numbers, operator: str) -> numbers:
+    """
+    An operator in Python is a special symbol that performs an action on one or more values.
+     For example, the + operator adds two numbers, the * operator multiplies two numbers,
+    and the / operator divides two numbers.
+    """
     if operator == '-':
         return num1 - num2
     elif operator == '+':
@@ -78,6 +84,8 @@ print('---------------------------------------------------------')
 # example of method overloading
 
 def sum(n1: numbers, n2: numbers, n3: numbers = 0, n4: numbers = 0) -> numbers:
+    # we point '0' as e default argument in case of we do not point any parameters in a function
+    # for this data, so these 2 will not be plus
     return n1 + n2 + n3 + n4
 
 
@@ -88,6 +96,7 @@ print(sum(10, 20, 30))
 print(sum(10, 20, 30, 40))
 
 
+# PY method example
 class test:
     def method(self):
         pass
