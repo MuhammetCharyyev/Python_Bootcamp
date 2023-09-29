@@ -18,7 +18,7 @@ utility.calculate(10, 30, "*")
 
 print('---------------------------------------------------------')
 
-import utility as u
+import utility as u # make name shorter with 'as' (Alias) keyword
 
 u.sum(10, 20)
 u.concat("A", 1, 2)
