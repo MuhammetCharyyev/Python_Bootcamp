@@ -35,7 +35,7 @@ for x in range(1, 11): # repeating 11 times of below
 
 print('-----------------------')
 
-num = int( input('Enter a positive number:\n')) # input is like Scan in Java
+num = int( input('Enter a positive number:\n')) # input is like Scan in Java, will accept int only
 
 while num <= 0: # while you dont enter positive number it will ask enter number
     num = int( input('Enter a positive number:\n'))
@@ -46,7 +46,7 @@ print('-----------------------')
 
 answer = input('Enter yes or no:\n')
 
-while not ( answer.lower() == 'yes' or answer.lower() =='no'):
+while not ( answer.lower() == 'yes' or answer.lower() == 'no'): # 'lower' is for ignoring case
     answer = input('Enter yes or no:\n')
 
 print(f'You have entered {answer}')
