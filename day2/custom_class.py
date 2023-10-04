@@ -9,7 +9,8 @@ class Employee:
     def __init__(self, name: str = 'Unknown', job_title: str = 'Janitor', salary: numbers = 0):
         # in the PY constructor we may point out default arguments (in parentheses)
         # to allow us in the implementation part to skip unfilled variables
-        self.name = name
+        self.name = name # if we want make it private then put __name here and everywhere
+                         # if we want to make it protected then put _name
         self.job_title = job_title
         self.salary = salary
 
@@ -31,7 +32,7 @@ print(employee1.salary)
 
 employee2 = Employee('Daniel') # only one parameter will be printed and others are default
 
-print(employee2.name)
+print(employee2.name) # __name
 print(employee2.job_title)
 print(employee2.salary)
 
