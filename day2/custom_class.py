@@ -16,8 +16,10 @@ class Employee:
     def work(self): # instance method
         print(f'{self.name} is working') # f - is for concatenation purpose
 
-    def __str__(self):
+    def __str__(self): # __str__ is like toString method in Java, to print object in String format
         return f'{type(self).__name__}{self.__dict__}'
+        # 'type' - is a dynamic way to show a class name
+        # __dict__ is like a Map with key/value format
 
 
 employee1 = Employee()
