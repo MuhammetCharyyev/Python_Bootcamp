@@ -52,23 +52,23 @@ print(days.index('Wednesday'))
 
 numbers = (10, 10, 10, 10, 20, 30, 40, 50, 10)
 
-print( numbers.count(10) )
+print( numbers.count(10) ) # counting all '10's
 
 print('-------------------------')
 
-for x in days:
+for x in days: # for loop, print each element
     print(x)
 
 print('-------------------------')
 
-for x in range(0, len(days)):
+for x in range(0, len(days)): # index of each element of tuple
     print(x)
 
 
 print('-------------------------')
 
 
-for x in reversed(range(0, len(days))):
+for x in reversed(range(0, len(days))): # reversed index number
     print(x)
 
 print('-------------------------')
