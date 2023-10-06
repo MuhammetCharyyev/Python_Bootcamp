@@ -16,7 +16,7 @@ numbers_list = [10, 20, 30, 40, 50, 60, 70, 80]
 
 print(numbers_list)
 
-numbers_list[2:-2] = [300, 4000, 5, 60000]
+numbers_list[2:-2] = [300, 4000, 5, 60000] # update above list from the index 2 till -2
 
 print(numbers_list)
 
@@ -24,13 +24,13 @@ print('------------------------------------')
 
 characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
 
-list1 = characters[2: -3]
+list1 = characters[2: -3] # slicing above list from index 2 till -3 :- ['c', 'd', 'e', 'f']
 print(list1)
 
-list2 = characters[:4]
+list2 = characters[:4] # slicing from the very beginning till index -4
 print(list2)
 
-list3 = characters[2:]
+list3 = characters[2:] # slicing from the index till the end
 print(list3)
 
 characters[2:5] = ['C', "D", 'E', 'C', 'D', 'E', 'X', 'Y', 'Z']
