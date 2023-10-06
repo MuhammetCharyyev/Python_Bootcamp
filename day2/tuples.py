@@ -73,13 +73,13 @@ for x in reversed(range(0, len(days))): # reversed index number
 
 print('-------------------------')
 
-nested_tuple = ( (1, 2, 3), (4, 5, 6, 7,8), (9, 10) )
+nested_tuple = ( (1, 2, 3), (4, 5, 6, 7,8), (9, 10) ) # nested tuple is like multidimensional array
 
 print(len(nested_tuple))
 
 print('-------------------------')
 
-for x in nested_tuple:
+for x in nested_tuple: # nested loop
     print(x)
     for y in x:
         print(y)
