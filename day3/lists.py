@@ -184,12 +184,23 @@ divisible_by_5 = []
 
 for x in nums:
     if x % 5 == 0:
-        divisible_by_5.append(x)
+        divisible_by_5.append(x) # the one way to insert elements divisible by 5
 
 print(divisible_by_5)
 """
 
 divisible_by_5 = tuple( [ x  for x in nums if x % 5 == 0 ] )
+# if you want to convert this list to tuple then use above construction
+
+"""
+the same way but shorter in 1 line using comprehension
+to declare a comprehension always start with curlybrases of square brackets
+first is a variable (x) that represent an element that will be inserted into the list
+then it goes 'for' same variable name
+'in' the existed list with elements
+finally 'if' condition 
+
+"""
 
 print(divisible_by_5)
 
@@ -205,6 +216,6 @@ print('------------------------------------')
 
 names = ['Python', 'Java', 'Java', 'JavaScript', 'java', 'JaVA', 'Ruby']
 
-names = [x for x in names if x.lower() != 'java']
+names = [x for x in names if x.lower() != 'java'] # comprehension to remove all javas
 
 print(names)
