@@ -33,7 +33,7 @@ print(list2)
 list3 = characters[2:] # slicing from the index till the end
 print(list3)
 
-characters[2:5] = ['C', "D", 'E', 'C', 'D', 'E', 'X', 'Y', 'Z']
+characters[2:5] = ['C', "D", 'E', 'C', 'D', 'E', 'X', 'Y', 'Z'] # inserting in the interval from index 2 till 5
 
 print(characters)
 
@@ -41,15 +41,15 @@ print('------------------------------------')
 
 names = ['Conor', 'Steve', 'Hazel', 'Breanna']
 
-for x in names:
+for x in names: # iteration (loop) of each element
     print(x)
 
 print('------------------------------------')
 
 nums = [10, 20, 30, 40, 50, 60]
 
-for i in range(len(nums)):
-    nums[i] = int(nums[i] / 5)
+for i in range(len(nums)): # get range index numbers in above list from the very beginning (by default) till the end
+    nums[i] = int(nums[i] / 5) # divide each element to 5 and assign it to int
 
 print(nums)
 
@@ -62,7 +62,7 @@ for i in reversed(range(len(nums))):
 
 print('------------------------------------')
 
-for x in nums[::-1]:
+for x in nums[::-1]: # reversing with a help of slicing
     print(x)
 
 print('------------------------------------')
@@ -72,7 +72,7 @@ for x in reversed(nums):
 
 print('------------------------------------')
 
-i = 0
+i = 0 # initiate and assign index to 'i' for while loop purpose
 
 while i < len(nums):
     print(nums[i])
@@ -90,7 +90,7 @@ nums = [60, 500, 10, 20, 15, 5, 0]
 
 # nums.sort()  # ascending order
 
-nums.sort(reverse=True)
+nums.sort(reverse=True) # sort list in descending (reversed) order
 
 print(nums)
 
