@@ -123,12 +123,12 @@ print('------------------------------------')
 list1 = [1, 2, 3, 4, 5]
 list2 = [1, 2, 3, 4, 5]
 
-print(list1 is list2)
+print(list1 is list2) # return FALSE because List is changeable
 
 tuple1 = (1, 2, 3, 4, 5)
 tuple2 = (1, 2, 3, 4, 5)
 
-print(tuple1 is tuple2)
+print(tuple1 is tuple2) # return TRUE as tuple is immutable
 
 
 print('------------------------------------')
@@ -145,15 +145,16 @@ groceries_list.remove('Beef')
 
 print(groceries_list)
 
-groceries_list.pop()
+groceries_list.pop() # remove the last element in the list
 
 print(groceries_list)
 
-groceries_list.pop(1)
+groceries_list.pop(1) # removing the 1 index from the list (second word)
 
 print(groceries_list)
 
 groceries_list.insert(2, 'Apple')
+# insert VS append is when we want to insert at exact index number place
 
 print(groceries_list)
 
@@ -162,14 +163,16 @@ print( groceries_list.index('Eggs'))
 
 nums = [1, 2, 3, 4, 5, 1, 1, 1, 1, 1]
 
-print(nums.count(1))
+print(nums.count(1)) # count only '1' in the list
 
 
 print('--------------- Comprehensions -------------------------')
+# Comprehension is used to create a new List based on lists/set/tuples only and useful for filtering
+# you may convert tuple to the list, make a comprehension and then convert back to the tuple
 
 nums = []
 
-for x in range(1, 51):
+for x in range(1, 50): # loop is a way to include elements (from 1 to 51) into the list without actual typing
     nums.append(x)
 
 print(nums)
