@@ -40,5 +40,5 @@ class Person:
 
 person1 = Person()
 
-person1.person_name = "Daniel"
+person1.person_name = "Daniel" # assigning variable if you dont have getter
 print(person1.person_name)
