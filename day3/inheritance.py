@@ -4,12 +4,14 @@ class Person:
         self.age = age
 
     def __str__(self):
-        return f'{type(self).__name__}{self.__dict__}'
+        return f'{type(self).__name__}{self.__dict__}' # like toString method in Java
 
 
 class Employee(Person):
 
-    def __init__(self, name: str, age: int, job_title: str, company_name: str = 'Unknown', salary: int = 0):
+    def __init__(self, name: str, age: int, job_title: str, company_name:
+                str = 'Unknown', salary: int = 0): # if you put one default element as 'Unknown' here
+                                                   # then the 2d element has to be also a default one
         super().__init__(name, age)  # calling parent class' constructor
         self.job_title = job_title
         self.company_name = company_name
@@ -28,6 +30,7 @@ class Developer(Employee):
 class Teacher(Employee):
 
     def __init__(self, name: str, age: int, job_title: str = "Teacher", company_name: str = 'Unknown', salary: int = 0):
+                #overloading above constructor
         super().__init__(name, age, job_title, company_name, salary) # calling parent class' constructor
 
     def work(self):
