@@ -11,7 +11,7 @@ class Shape:
         pass
 
     def __str__(self):
-        return f'{type(self).__name__}{self.__dict__}'
+        return f'{type(self).__name__}{self.__dict__}' # toString Method
 
 
 class Square(Shape):
