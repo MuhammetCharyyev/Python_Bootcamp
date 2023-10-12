@@ -14,7 +14,7 @@ abstractmethod: annotations that can be given to abstract methods
 
 class Volume(ABC):
 
-    @abstractmethod
+    @abstractmethod # annotation for abstract method
     def volume(self):
         pass
 
