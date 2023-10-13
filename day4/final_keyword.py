@@ -32,13 +32,13 @@ class Person:
     def __init__(self, age: int):
         self.__age = age
 
-    @property
+    @property # getter
     def person_age(self):
         return self.__age
 
-    @person_age.setter
+    @person_age.setter # setter
     def person_age(self, value):
-        raise RuntimeError(f' age is constant, can not be changed')
+        raise RuntimeError(f' age is constant, can not be changed') # create error in setters
 
 
 person1 = Person(10)
