@@ -31,13 +31,13 @@ employee2['full_time'] = True
 
 print(employee2)
 
-employee2.pop('full_time')
+employee2.pop('full_time') # removing the entire pair
 
 print(employee2)
 
 # print( help(dict.popitem) )
 
-employee2.popitem()
+employee2.popitem() #LIFO
 
 print(employee2)
 
@@ -45,7 +45,7 @@ l = employee2.copy()
 
 print(l)
 
-print(employee2 is l)
+print(employee2 is l) # return false
 
 print('--------- Iterating Dictionary -----------------')
 
@@ -58,14 +58,14 @@ employee3 = {
     'company': 'Apple Inc'
 }
 
-print(list(employee3.keys()))
+print(list(employee3.keys())) # list all keys
 
 for key in employee3.keys():
-    print(f'{key} : {employee3[key]}')
+    print(f'{key} : {employee3[key]}') # iterate and concatenate a key and value
 
 print('---------------------------------------')
 
-values = list(employee3.values())
+values = list(employee3.values()) # list all values
 
 print(values)
 
@@ -77,6 +77,8 @@ print('---------------------------------------')
 for x in employee3.items():  # items(): returns a collection of tuples, in each tuple there will be two elements
     # print(x)
     print(f'{x[0]} : {x[1]}')
+    # iterate and get each element as a tuple (x) but with concatenation and as a normal pair,
+    #first element with index [0] and second element with index [1]
 
 print('---------------------------------------')
 
