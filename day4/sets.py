@@ -1,5 +1,5 @@
 
-unique_element = set() # deca;ring the empty set with parenthesis
+unique_element = set() # deca;ring the empty set with parenthesis, if you have elements then {}
 
 unique_element.add(10) # add for adding, and also remove(), clear(), pop(), update(), copy() etc.
 unique_element.add(10)
