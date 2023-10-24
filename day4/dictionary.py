@@ -78,12 +78,12 @@ for x in employee3.items():  # items(): returns a collection of tuples, in each 
     # print(x)
     print(f'{x[0]} : {x[1]}')
     # iterate and get each element as a tuple (x) but with concatenation and as a normal pair,
-    #first element with index [0] and second element with index [1]
+    #first element or key with index [0] and second element or value with index [1]
 
 print('---------------------------------------')
 
-students = {
-    'A01': {
+students = {   # nested dictionary
+    'A01': {   # ID 'A01" here is a key and the nested dictionary is a values
         'name': 'James',
         'gender': 'Male',
         'gpa': 3.5,
@@ -107,7 +107,7 @@ students = {
 
 print(students)
 
-students['A01']['gpa'] = 2.5
+students['A01']['gpa'] = 2.5 #accesing the exact element in the nested dictionary
 
 print(students)
 
@@ -117,7 +117,7 @@ students['A02']['gender'] = 'Male'
 
 print(students)
 
-students['A03']['subjects'][1] = 'Biology'
+students['A03']['subjects'][1] = 'Biology' # access to exact element to the nested-nested dict. by index of List
 
 print(students['A03'])
 
@@ -125,16 +125,16 @@ print('---------------------------------------------')
 
 
 for x in students.items():
-    print(x[1])
-    for y in x[1]:
+    print(x[1]) # getting the first inner dictionary
+    for y in x[1]: # getting every single key in this internal dict.
         print(y)
 
 print('---------------------------------------------')
 
-for value in students.values():
+for value in students.values(): # get all values
     print(value)
-    for item in value.items():
-        print(item[1])
+    for item in value.items(): # every single item in all nested dict.
+        print(item[1]) # only values
 
 
 
