@@ -19,18 +19,19 @@ unique_element.remove(10)
 print(unique_element)
 
 unique_element.update( (1, 2, 3, 4, 5,1 ,2 ,3 , 4, 5) )
+# update the existed set with tuple but it will print only unique elements
 
 # print( help(set.update) )
 
 print(unique_element)
 
-n = unique_element.pop()
+n = unique_element.pop() # in PY pop() method will remove the first element LIFO
 
 print(unique_element)
 
 print(n)
 
-# print( help( str.istitle ) )
+# print( help( str.istitle ) ) ->help() will show you a help message
 
 
 
