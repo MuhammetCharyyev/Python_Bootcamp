@@ -24,7 +24,7 @@ else:
 print('---------------------------------------------')
 
 try:
-    raise FileNotFoundError('No such a file')
+    raise FileNotFoundError('No such a file') # raise keyword manually throw the error, should be inside a block
 except SyntaxError:
     print("It is a syntax error")
 except OSError:
