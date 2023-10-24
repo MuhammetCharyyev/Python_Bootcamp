@@ -2,7 +2,7 @@ import os
 
 path = 'files/Test.txt'
 
-text_file = open(path, 'r')
+text_file = open(path, 'r') # will open a file by path and read
 
 print( text_file.read() )
 
