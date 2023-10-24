@@ -1,4 +1,5 @@
-employee1 = {} # curly brases are especialy for dictionary (as Map)
+employee1 = {} # curly brases are especialy for dictionary (as Map in pair format)
+# key is unique
 
 employee1['name'] = 'James'
 employee1['name'] = 'Daniel'
@@ -7,7 +8,7 @@ employee1['salary'] = 60_000
 
 print(employee1)
 
-employee2 = {
+employee2 = { # dictionary as object
     'name': 'James',
     'age': 29,
     'salary': 80_000,
@@ -15,12 +16,12 @@ employee2 = {
 }
 
 print(employee2)
-print(employee2['name'])
+print(employee2['name']) # print only one element
 
-employee2['salary'] += 10000
+employee2['salary'] += 10000 # updating the value with adding
 print(employee2)
 
-employee2.update({'age': 40})
+employee2.update({'age': 40}) # update the exact key with a new value
 
 print(employee2)
 
