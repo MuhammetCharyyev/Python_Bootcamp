@@ -4,13 +4,13 @@ path = 'files/Test.json'
 
 jason_file = open(path, 'r')
 
-dictionary = json.load(jason_file)
+dictionary = json.load(jason_file) # json.load will load data from the json file and assign to dict.
 
 print(dictionary)
 print(type(dictionary))
 
 for x in dict(dictionary).keys():
-    print(x)
+    print(x) # getting every single keys in this dict
 
 jason_file.close()
 
@@ -39,7 +39,7 @@ students = {
     }
 }
 
-jason_file = open('files/Test2.json', 'w')
+jason_file = open('files/Test2.json', 'w') # writing a new json file for adding above value
 
 json_object = json.dumps(students, indent=3)  # converting dictionary object to json object
 
