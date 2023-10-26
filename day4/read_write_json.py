@@ -41,7 +41,7 @@ students = {
 
 jason_file = open('files/Test2.json', 'w') # writing a new json file for adding above value
 
-json_object = json.dumps(students, indent=3)  # converting dictionary object to json object
+json_object = json.dumps(students, indent=3)  # converting dictionary object to json object, indentation
 
 jason_file.write(json_object)
 
